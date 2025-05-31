@@ -2,6 +2,3 @@
 
 string = input()
 result = eval(string)
-
-#if result is not None:
-#print(result)
