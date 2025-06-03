@@ -1,11 +1,6 @@
-# Question Link https://www.hackerrank.com/challenges/np-arrays/problem?isFullScreen=true
+# Question Link https://www.hackerrank.com/challenges/re-split/problem?isFullScreen=true
   
-import numpy
+regex_pattern = r"[,,.]"	# Do not delete 'r'.
 
-def arrays(arr):
-    a = numpy.array(arr, float)
-    return a[::-1]
-
-arr = input().strip().split(' ')
-result = arrays(arr)
-print(result)
+import re
+print("\n".join(re.split(regex_pattern, input())))
