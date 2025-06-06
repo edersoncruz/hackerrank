@@ -2,15 +2,15 @@
 
 from collections import Counter
 
-number_of_shoes = input("Number: ")
-sizes_of_shoes_entrada = input('Size: ')
+number_of_shoes = input()
+sizes_of_shoes_entrada = input()
 sizes_of_shoes_list = sizes_of_shoes_entrada.split()
 sizes_of_shoes_counter = Counter(sizes_of_shoes_list)
-number_of_customers = int(input('Number of Customers: '))
+number_of_customers = int(input())
 total = 0
 
 for _ in range(number_of_customers):
-    key, value = input('Purchase: ').split()
+    key, value = input().split()
     value_int = int(value)
 
     if key in sizes_of_shoes_counter:

@@ -8,4 +8,4 @@ permutations_ = list(permutations(string_, value_int))
 sorted_permutations = sorted(permutations_)
 
 for s in sorted_permutations:
-    print(" ".join(map(str, s)))
+    print("".join(map(str, s)))
